@@ -1,0 +1,36 @@
+.slider{
+    height: calc(100vh - 80px);
+    width: 100vw;
+
+    .container{
+        width: 300vw;
+        display: flex;
+        height: 88%;
+        transition: all 1s ease;
+        
+        img{
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .icons{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 3vw;
+        margin-top: 7px;
+
+        .fa-regular.fa-arrow-left-long, .fa-regular.fa-arrow-right-long{
+            font-size: 2.5vw;
+            cursor: pointer;
+            border: 2px solid white;
+            padding: 2px 7px;
+            border-radius: 10px;
+            
+        }
+    }
+}

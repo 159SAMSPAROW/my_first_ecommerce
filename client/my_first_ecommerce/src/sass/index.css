@@ -1,0 +1,220 @@
+* {
+  background-color: black;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.app .link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 80px;
+  color: white;
+}
+.navbar .wrapper {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.navbar .item > img {
+  height: 25px;
+}
+.navbar .left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar .center {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.navbar .right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar .icons {
+  display: flex;
+  gap: 25px;
+  color: white;
+  cursor: pointer;
+}
+.navbar .icons .cartIcon {
+  position: relative;
+}
+.navbar .icons .cartIcon span {
+  font-size: 12px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #2879fe;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  color: white;
+  margin: 10vw 20vw 2vw 20vw;
+}
+.footer .top {
+  display: flex;
+  gap: 5vw;
+}
+.footer .top .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+  text-align: justify;
+  font-size: 1.1vw;
+}
+.footer .top .item h1 {
+  font-size: 1.3vw;
+  letter-spacing: 0.2vw;
+  font-weight: 700;
+  color: yellow;
+}
+.footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5vw;
+}
+.footer .bottom .left {
+  display: flex;
+  align-items: center;
+}
+.footer .bottom .left .logo {
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: yellow;
+}
+.footer .bottom .left .copyright {
+  margin-left: 1vw;
+  font-size: 1vw;
+}
+.footer .bottom .right img {
+  height: 1.5vw;
+}
+
+.slider {
+  height: calc(100vh - 80px);
+  width: 100vw;
+}
+.slider .container {
+  width: 300vw;
+  display: flex;
+  height: 88%;
+  transition: all 1s ease;
+}
+.slider .container img {
+  width: 100vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider .icons {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 3vw;
+  margin-top: 7px;
+}
+.slider .icons .fa-regular.fa-arrow-left-long, .slider .icons .fa-regular.fa-arrow-right-long {
+  font-size: 2.5vw;
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+.featuredProducts {
+  color: white;
+  margin: 5vw 10vw;
+}
+.featuredProducts .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5vw;
+}
+.featuredProducts .top h1 {
+  flex: 2;
+  text-transform: capitalize;
+  color: yellow;
+}
+.featuredProducts .top p {
+  flex: 3;
+}
+.featuredProducts .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 2.5vw;
+}
+
+.card {
+  color: white;
+  width: 17vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.card .img {
+  width: 100%;
+  height: 17vw;
+  overflow: hidden;
+  position: relative;
+}
+.card .img:hover .secondImg {
+  z-index: 2;
+}
+.card .img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.card .img .mainImg {
+  z-index: 1;
+}
+.card .img span {
+  color: yellow;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  padding: 3px 5px;
+  z-index: 3;
+  font-size: 12px;
+  font-weight: 500;
+}
+.card h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.card .prices {
+  display: flex;
+  gap: 2vw;
+}
+.card .prices h3 {
+  font-size: 18px;
+  font-weight: 500;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,57 @@
+.footer {
+  color: white;
+  margin: 10vw 20vw 2vw 20vw;
+
+  .top {
+    display: flex;
+    gap: 5vw;
+
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2vw;
+      text-align: justify;
+      font-size: 1.1vw;
+
+      h1 {
+        font-size: 1.3vw;
+        letter-spacing: 0.2vw;
+        font-weight: 700;
+        color: yellow;
+      }
+
+      span {
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vw;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        font-weight: bold;
+        font-size: 1.5vw;
+        color: yellow;
+      }
+      .copyright {
+        margin-left: 1vw;
+        font-size: 1vw;
+      }
+    }
+    .right {
+
+    img{
+        height: 1.5vw;
+    }
+
+
+    }
+  }
+}
