@@ -1,0 +1,50 @@
+.contact {
+  background-color: yellow;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+
+    .mail {
+      border-radius: 5px;
+      margin-right: 10vw;
+    }
+
+    span {
+      background-color: yellow;
+      color: black;
+      font-size: 25px;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      color: white;
+    }
+    button {
+      padding: 10px;
+      color: black;
+      background-color: yellow;
+      border-radius: 0 5px 5px 0;
+      border: 2px solid black;
+     
+    }
+    .icons {
+      display: flex;
+      gap: 5px;
+      background-color: yellow;
+
+      .social {
+        font-size: 17px;
+      }
+    }
+  }
+}
