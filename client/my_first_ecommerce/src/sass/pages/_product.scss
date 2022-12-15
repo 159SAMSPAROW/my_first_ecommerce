@@ -1,4 +1,117 @@
-.product{
+.product {
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  gap: 20px;
+  font-family: 'Kanit', sans-serif;
+  
+  .left{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+
+    .images{
+      flex: 1;
+      img{
+        width: 100%;
+        height: 100px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+    .mainImg{
+      flex: 5;
+
+      img{
+        width: 100%;
+        max-height: 800px;
+      }
+    }
+  }
+  .right{
     color: white;
-    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .price{
+      font-size: 30px;
+      color: yellow;
+      font-weight: 500;
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    .quantity{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 25px;
+
+      button{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 2px solid yellow;
+        font-size: 25px;
+        border-radius: 5px;
+        color: yellow;
+      }
+    }
+    .links{
+      display: flex;
+      gap: 20px;
+
+      .item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        letter-spacing: 1.9px;
+        color: red;
+      }
+    }
+
+    .add{
+      letter-spacing: 3px;
+      width: 250px;
+      padding: 10px;
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      cursor: pointer;
+      border-radius: 5px ;
+
+      & > i{
+        background-color: yellow;
+        font-weight: bold;
+      }
+    }
+
+    .info{
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+      margin-top: 20px;
+
+    }
+    hr{
+      width: 80%;
+     text-align: left;
+    }
+  }
+
 }

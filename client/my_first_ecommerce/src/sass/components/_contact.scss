@@ -1,9 +1,10 @@
 .contact {
   background-color: yellow;
-  padding: 15px;
+  padding: 10px;
   color: white;
   display: flex;
   justify-content: center;
+  font-family: 'La Belle Aurore', cursive;
 
   .wrapper {
     width: 100%;
@@ -15,35 +16,45 @@
     .mail {
       border-radius: 5px;
       margin-right: 10vw;
+      margin-left: 10px;
     }
 
     span {
       background-color: yellow;
       color: black;
-      font-size: 25px;
+      font-size: 35px;
     }
 
     input {
-      padding: 10px;
+      padding: 11px;
       border: none;
       border-radius: 5px 0 0 5px;
       color: white;
+      font-family: 'La Belle Aurore', cursive; 
     }
+    ::placeholder{
+        font-size: 20px;
+      }
     button {
       padding: 10px;
       color: black;
       background-color: yellow;
       border-radius: 0 5px 5px 0;
       border: 2px solid black;
-     
+      font-family: 'La Belle Aurore', cursive;
+      font-weight: bold;
+      cursor: pointer;
     }
+
     .icons {
       display: flex;
       gap: 5px;
       background-color: yellow;
+      align-items: center;
 
       .social {
-        font-size: 17px;
+        font-size: 35px;
+        margin-right: 20px;
       }
     }
   }

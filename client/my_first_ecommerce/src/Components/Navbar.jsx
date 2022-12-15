@@ -1,7 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Cart from './Cart'
+import { useSelector } from 'react-redux'
 
 export default function Navbar() {
+
+  const [open, setOpen] = useState(false)
+  const products = useSelector(state=>state.cart.products)
+
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -31,7 +38,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="center">
+        <div className="center logo" >
           <Link className="link" to="/">
             mY StOre
           </Link>
@@ -62,13 +69,14 @@ export default function Navbar() {
             <i className="fa-solid fa-magnifying-glass"></i>
             <i className="fa-solid fa-user"></i>
             <i className="fa-regular fa-heart"></i>{' '}
-            <div className="cartIcon">
+            <div className="cartIcon" onClick={()=>setOpen(!open)}>
               <i className="fa-regular fa-cart-shopping"></i>
-              <span>0</span>
+              <span>{products.length}</span>
             </div>
           </div>
         </div>
       </div>
+      {open && <Cart/>}
     </div>
   )
 }

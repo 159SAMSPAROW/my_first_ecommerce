@@ -1,6 +1,8 @@
 .navbar {
   height: 80px;
   color: white;
+  font-family: 'Kanit', sans-serif;
+  
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -22,9 +24,10 @@
     gap: 25px;
   }
 
-  .center {
+  .center.logo {
     font-size: 30px;
     letter-spacing: 2px;
+    font-family: 'Rubik Gemstones', cursive;
   }
 
   .right {

@@ -30,7 +30,7 @@ export default function Slider() {
           <i className="fa-regular fa-arrow-left-long"></i>
         </div>
         <div className="icon" onClick={nextSlide}>
-          <i class="fa-regular fa-arrow-right-long"></i>
+          <i className="fa-regular fa-arrow-right-long"></i>
         </div>
       </div>
     </div>
